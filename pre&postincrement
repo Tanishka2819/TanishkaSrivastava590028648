@@ -1,0 +1,19 @@
+#include <stdio.h>
+void main() {
+    int x ,pre,post;
+    printf("Enter the number");
+    scanf("%d",&x);
+    printf(" Pre-increment (++) \n");
+    printf("Initial value of x: %d\n", x);
+    pre = ++x; 
+    printf("Value after ++x operation: %d\n", pre);
+    printf("Value of x after pre-increment: %d\n\n", x);
+    
+    printf(" Post-increment (++) \n");
+    printf("Initial value of x: %d\n", x);
+    post = x++; 
+    printf("Value after x++ operation: %d\n", post);
+    printf("Value of x after post-increment: %d\n", x);
+
+    
+}
