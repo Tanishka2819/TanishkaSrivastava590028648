@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void main()
+{
+ int a;
+ int b;
+
+ int largest;
+ 
+ printf ("Enter the 1st number \n");
+ scanf("%d",&a);
+ printf ("Enter the 2nd number \n");
+ scanf("%d",&b);
+ largest = a>b ? a : b;
+ printf ("largest number is :  %d",largest);
+   
+}
