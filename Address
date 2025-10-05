@@ -1,0 +1,7 @@
+#include<stdio.h>
+void main()
+{
+printf("B70 Alberto Apartment \n");
+printf("17B Divil Street \n");
+printf("Dehradun, Uttrakhand \n");
+}
