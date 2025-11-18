@@ -1,0 +1,76 @@
+#include <stdio.h>
+
+// Define a structure to represent a complex number
+struct Complex {
+    float real;
+    float imaginary;
+};
+
+// Function prototypes
+struct Complex read_complex();
+void write_complex(struct Complex c);
+struct Complex add_complex(struct Complex c1, struct Complex c2);
+struct Complex subtract_complex(struct Complex c1, struct Complex c2);
+
+int main() {
+    struct Complex num1, num2, sum, difference;
+
+    printf("Enter the first complex number:\n");
+    num1 = read_complex();
+
+    printf("\nEnter the second complex number:\n");
+    num2 = read_complex();
+
+    printf("\nFirst complex number: ");
+    write_complex(num1);
+
+    printf("Second complex number: ");
+    write_complex(num2);
+
+    // Perform addition and subtraction
+    sum = add_complex(num1, num2);
+    difference = subtract_complex(num1, num2);
+
+    printf("\nSum: ");
+    write_complex(sum);
+
+    printf("Difference: ");
+    write_complex(difference);
+
+    return 0;
+}
+
+// Function to read a complex number
+struct Complex read_complex() {
+    struct Complex c;
+    printf("  Enter real part: ");
+    scanf("%f", &c.real);
+    printf("  Enter imaginary part: ");
+    scanf("%f", &c.imaginary);
+    return c;
+}
+
+// Function to write/display a complex number
+void write_complex(struct Complex c) {
+    if (c.imaginary >= 0) {
+        printf("%.2f + %.2fi\n", c.real, c.imaginary);
+    } else {
+        printf("%.2f - %.2fi\n", c.real, -c.imaginary);
+    }
+}
+
+// Function to add two complex numbers
+struct Complex add_complex(struct Complex c1, struct Complex c2) {
+    struct Complex result;
+    result.real = c1.real + c2.real;
+    result.imaginary = c1.imaginary + c2.imaginary;
+    return result;
+}
+
+// Function to subtract two complex numbers
+struct Complex subtract_complex(struct Complex c1, struct Complex c2) {
+    struct Complex result;
+    result.real = c1.real - c2.real;
+    result.imaginary = c1.imaginary - c2.imaginary;
+    return result;
+} its workin step by step
