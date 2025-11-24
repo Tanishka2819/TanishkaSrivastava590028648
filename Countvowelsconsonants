@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 int main() {
     int vowels = 0, consonants = 0, digits = 0, special = 0;
