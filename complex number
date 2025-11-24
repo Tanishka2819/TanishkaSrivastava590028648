@@ -73,4 +73,4 @@ struct Complex subtract_complex(struct Complex c1, struct Complex c2) {
     result.real = c1.real - c2.real;
     result.imaginary = c1.imaginary - c2.imaginary;
     return result;
-} its workin step by step
+}
