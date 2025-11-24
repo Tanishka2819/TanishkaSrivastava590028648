@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <ctype.h>
+#include <string.h>
 
-int main(void) {
+int main() {
     int vowels = 0, consonants = 0, digits = 0, special = 0;
     int c;
 
