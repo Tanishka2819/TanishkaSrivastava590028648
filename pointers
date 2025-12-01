@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int a[4]= {10,20,30,40};
+    char c[4]= {'A','B' ,'C','D'};
+    float f[4]= {1.1,2.2,3.3,4.4};
+    
+    int *ptr =a;
+    char *cp =c;
+    float *fp =f;
+    printf("Initial ptr= %p ,Value = %d \n ", ptr , *ptr);
+    ptr++;
+     printf(" After increment ptr= %p ,Value = %d \n ", ptr , *ptr);
+    ptr--;
+     printf(" After decrement ptr= %p ,Value = %d \n ", ptr , *ptr);
+         printf("Initial cp= %p ,Value = %c \n ", cp , *cp);
+    cp++;
+     printf(" After increment cp= %p ,Value = %c \n ", cp , *cp);
+    cp--;
+     printf(" After decrement cp= %p ,Value = %c \n ", cp , *cp);
+      printf("Initial fp= %p ,Value = %f \n ", fp , *fp);
+    fp++;
+     printf(" After increment ptr= %p ,Value = %f \n ", fp , *fp);
+    fp--;
+     printf(" After decrement ptr= %p ,Value = %f \n ", fp , *fp);
+     return 0 ;
+}
