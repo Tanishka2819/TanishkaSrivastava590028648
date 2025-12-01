@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int a[4]= {10,20,30,40};
+    int *ptr =a;
+     printf("Initial ptr= %p ,Value = %d \n ", ptr , *ptr);
+    ptr = ptr+2;
+     printf(" After increment ptr= %p ,Value = %d \n ", ptr , *ptr);
+    ptr = ptr-1;
+     printf(" After decrement ptr= %p ,Value = %d \n ", ptr , *ptr);
+     return 0 ;
+}
